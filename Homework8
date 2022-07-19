@@ -76,11 +76,11 @@ insert into employee (name, email, birthday) values ('Car', 'cpinnion1d@usnews.c
   ---------------
 5 UPDATE employee
   SET email = 'default'
-  WHERE name = null
+  WHERE name IS null
   
 //Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım
 1 DELETE FROM employee
-  WHERE email = null;
+  WHERE email IS null;
   ----------------
 2 DELETE FROM employee
   WHERE id = 15
@@ -92,4 +92,4 @@ insert into employee (name, email, birthday) values ('Car', 'cpinnion1d@usnews.c
   WHERE id >30;
   ---------------
 5 DELETE FROM employee
-  WHERE birthday =null;
+  WHERE birthday IS null;
